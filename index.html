@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="웹 개발 관련 최신 정보를 제공합니다.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (Facebook, 카카오톡) -->
+    <meta property="og:title" content="망우역사문화공원">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com">
+    <meta property="og:type" content="website">
+
+    <!-- 모바일 설정 -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- 기타 -->
+    <meta name="author" content="손은비">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>망우역사문화공원</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 사이드 메뉴 나올 시 반투명한 배경 -->
+    <div class="overlay"></div>
+    <a href="#" class="fixedTop">
+        <img src="./img/btn_top.png" alt="top">
+    </a>
+    <header>
+        <!-- 검색창 -->
+        <div class="search-wrap">
+            <div class="rel">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <a href="#" class="sch-c-btn">
+                    닫기
+                    <img src="./img/tclose.png" alt="sch-ico">
+                </a>
+            </div>
+            <div class="sch-input-wrap">
+                <form action="sch.jsp">
+                    <label for="search" class="blind">검색하기</label>
+                    <input type="text" id="search" placeholder="검색어를 입력하세요">
+                    <input type="submit" value="검색하기" class="sch-go-btn">
+                </form>
+            </div>
+        </div>
+        <!-- 헤더의 첫 번째 부분 -->
+        <div class="h-dep1">
+            <div class="rel">
+                <ul class="sns-wrap">
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs1.png" alt="sns-ico">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs2.png" alt="sns-ico">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs3.png" alt="sns-ico">
+                        </a>
+                    </li>
+                </ul>
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="logo">
+                    </a>
+                </h1>
+                <ul class="util-wrap">
+                    <li>
+                        <a href="#" class="sch-open-btn">
+                            <img src="./img/util1.png" alt="util-ico">
+                            <div class="txt">검색</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/util3.png" alt="util-ico">
+                            <div class="txt">탐방코스</div>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- 1024px로 줄어들 시 생기는 메뉴 아이콘 -->
+                        <a href="#" class="btn-m-menu">
+                            <span>menu</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="h-dep2">
+            <div class="rel">
+                <ul class="main-nav">
+                    <li><a href="#">공원소개</a></li>
+                    <li><a href="#">중랑망우공간</a></li>
+                    <li><a href="#">주요묘역</a></li>
+                    <li><a href="#">전시</a></li>
+                    <li><a href="#">프로그램/행사</a></li>
+                    <li><a href="#">영원한 기억봉사단</a></li>
+                    <li><a href="#">시립묘지관리</a></li>
+                    <li><a href="#">소식/홍보</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="sub-nav-wrap">
+            <div class="rel">
+                <ul class="sub-nav">
+                    <li>
+                        <span class="blind">공원소개</span>
+                        <ul class="sub-list">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">망우역사문화공원은</a></li>
+                            <li><a href="#">공원둘러보기</a></li>
+                            <li><a href="#">BI소개</a></li>
+                            <li><a href="#">조직 및 업무</a></li>
+                            <li><a href="#">찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">중랑망우공간</span>
+                        <ul class="sub-list">
+                            <li><a href="#">주요시설</a></li>
+                            <li><a href="#">대관안내</a></li>
+                            <li><a href="#">대관신청</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">주요묘역</span>
+                        <ul class="sub-list">
+                            <li><a href="#">공원 내 인물</a></li>
+                            <li><a href="#">이달의 인물</a></li>
+                            <li><a href="#">공원 내 기념물</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">전시</span>
+                        <ul class="sub-list">
+                            <li><a href="#">기획전시</a></li>
+                            <li><a href="#">상설전시</a></li>
+                            <li><a href="#">온라인전시</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">프로그램/행사</span>
+                        <ul class="sub-list">
+                            <li><a href="#">프로그램 예약</a></li>
+                            <li><a href="#">프로그램 예약확인</a></li>
+                            <li><a href="#">프로그램 자료실</a></li>
+                            <li><a href="#">행사일정</a></li>
+                            <li><a href="#">갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">영원한 기억봉사단 </span>
+                        <ul class="sub-list">
+                            <li><a href="#">봉사단 소개</a></li>
+                            <li><a href="#">봉사단 공지</a></li>
+                            <li><a href="#">봉사단 가입신청</a></li>
+                            <li><a href="#">봉사 갤러리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">시립묘지관리</span>
+                        <ul class="sub-list">
+                            <li><a href="#">개장안내 및 절차</a></li>
+                            <li><a href="#">개장·화장 지원금 신청방법</a></li>
+                            <li><a href="#">각종서식</a></li>
+                            <li><a href="#">Q&A</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="blind">소식/홍보</span>
+                        <ul class="sub-list">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">언론보도</a></li>
+                            <li><a href="#">홍보자료</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="sns-wrap">
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs1.png" alt="sns-ico">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs2.png" alt="sns-ico">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/hs3.png" alt="sns-ico">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- swiper -->
+    <section class="hero">
+        <div class="rel">
+            <!-- .hero-slider -->
+            <div class="swiper hero-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide s01">
+                        <div class="tit-wrap">
+                            <h2>망우역사문화공원 전경</h2>
+                        </div>
+                    </div>
+                    <div class="swiper-slide s02">
+                        <div class="tit-wrap">
+                            <h2>망우역사문화공원</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- 인물 소개 섹션 -->
+    <section class="depth1">
+        <div class="rel">
+            <div class="news-wrap">
+                <h3>
+                    <img src="./img/leftnews.png" alt="ico">
+                    <span>새소식</span>
+                </h3>
+                <div class="news-slider-wrap">
+                    <div class="swiper news-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="swiper-slide">망우역사문화공원 무료셔틀버스 운행 안내</div>
+                              <div class="swiper-slide">TBS 중랑스테이 <흔적> 망우역사문화공원 방송 5.25.(목) 20:00</div>
+                              <div class="swiper-slide">묘지 연장신청 안내</div>
+                              <div class="swiper-slide">대관신청안내</div>
+                              <div class="swiper-slide">홈페이지 1차 오픈 안내</div>
+                          </div>
+                        <div class="swiper-button-wrap">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+                <!-- 오시는 길 및 관람안내 버튼 -->
+                <div class="info-wrap">
+                    <a href="#" class="info-btn">
+                        오시는길
+                        <span>→</span>
+                    </a>
+                    <a href="#" class="info-btn dark">
+                        관람안내
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <section class="depth2">
+        <div class="rel">
+            <h2>공원 내 인물</h2>
+            <ul class="tab">
+                <li><a href="#">애국지사</a></li>
+                <li><a href="#">문화예술</a></li>
+                <li><a href="#">사회인사</a></li>
+                <li><a href="#">기타인사</a></li>
+            </ul>
+        </div>
+        <div class="dep2-slider-wrap">
+            <div class="swiper dep2-sl-1">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+            <div class="swiper dep2-sl-2">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+            <div class="swiper dep2-sl-3">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+            <div class="swiper dep2-sl-4">
+                <div class="swiper-wrapper">
+
+                </div>
+            </div>
+
+            <div class="dep2-arr-wrap">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+    <section class="depth3">
+        <div class="rel">
+            <div class="in-wrap people-wrap">
+                <div class="tit-wrap">
+                    <h3>이달의 인물</h3>
+                    <a href="#" class="in-add-btn">
+                        <img src="./img/plus.png" alt="plus">
+                    </a>
+                </div>
+                <div class="c-wrap">
+                    <div class="people-c-wrap">
+                        <div class="img-wrap">
+                            <img src="./img/people-img.png" alt="img">
+                        </div>
+                        <h4>국채표</h4>
+                        <div class="date">1907 ~ 1969.2.5</div>
+                    </div>
+                    <a href="#" class="write-btn">
+                        추모글 쓰기
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+            <div class="in-wrap program-wrap">
+                <div class="tit-wrap">
+                    <h3>프로그램</h3>
+                    <a href="#" class="in-add-btn">
+                        <img src="./img/plus.png" alt="plus">
+                    </a>
+                </div>
+                <div class="in-slider-wrap">
+                    <div class="swiper program-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/program-1.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/program-2.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/program-3.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="in-wrap promotion-wrap">
+                <div class="tit-wrap">
+                    <h3>행사/전시</h3>
+                    <a href="#" class="in-add-btn">
+                        <img src="./img/plus.png" alt="plus">
+                    </a>
+                </div>
+                <div class="in-slider-wrap">
+                    <div class="swiper program-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/event-1.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/event-2.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <div class="img-wrap">
+                                        <img src="./img/event-3.jpg" alt="img">
+                                    </div>
+                                    <div class="sl-txt">
+                                        7월 30일(화)~ 8월 20일(화)
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+    <section class="depth4">
+        <div class="rel">
+          <div class="in-wrap clip-wrap">
+            <div class="tit-wrap">
+              <h3>홍보영상</h3>
+              <a href="#" class="in-add-btn">
+                <img src="./img/plus.png" alt="">
+    
+              </a>
+            </div>
+            <div class="in-slider-wrap">
+              <div class="swiper clip-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/promotion-1.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/promotion-2.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/promotion-3.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+     
+    
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="in-wrap gallery-wrap">
+            <div class="tit-wrap">
+              <h3>갤러리</h3>
+              <a href="#" class="in-add-btn">
+                <img src="./img/plus.png" alt="">
+    
+              </a>
+            </div>
+            <div class="in-slider-wrap">
+              <div class="swiper gallery-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/gallery-1.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/gallery-2.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/gallery-3.jpg" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+    
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="in-wrap service-wrap">
+            <div class="tit-wrap">
+              <h3>봉사단</h3>
+              <a href="#" class="in-add-btn">
+                <img src="./img/plus.png" alt="">
+    
+              </a>
+            </div>
+            <div class="in-slider-wrap">
+              <div class="swiper service-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/service-1.png" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/service-1.png" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="img-wrap">
+                        <img src="./img/service-1.png" alt="img">
+                      </div>
+                      <div class="sl-txt">
+                        
+                        망우역사문화공원 어반스케치 교육 수강모습
+                                        
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="depth5">
+        <div class="rel">
+          <div class="notice-media-wrap">
+            <h2>
+              <span class="on">공지사항</span>
+              <span>언론보도</span>
+            </h2>
+            <div class="content-wrap">
+              <ul class="notice-list active">
+                <li>
+                  <a href="#">
+                    <span class="txt">망우역사문화공원 진입로 일부통제 및 우회로 안내</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">망우역사문화공원 무료셔틀버스 운영 종료 안내</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">TBS 중랑스테이 <흔적> 망우역사문화공원 방송 5.25.(목) 20:00</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">중랑망우공간 보수공사(5.18.목~6.2.금) 기획전시실 임시휴관 안내</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="media-list">
+                <li>
+                  <a href="#">
+                    <span class="txt">시인 김영랑, 망우리로 돌아오다 | 뚱뚱한 몸짓에 걸걸한 웃음</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">호국보훈의 달 6월, 서울 대표 역사문화공원으로 거듭난 '망우리</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">망우리연구소, <독립운동의 주춧돌-남파 박찬익> 펴내</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="txt">망우리연구소, '독립운동의 주춧돌-남파 박찬익' 일대기 펴내</span>
+                    <span class="date">2024-07-19</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="right-wrap">
+            <div class="open-notice">
+              <a href="#">
+                <img src="./img/icon1.png" alt="icon">
+                <div class="t-wrap">
+                  <h4>개장안내</h4>
+                  <p class="txt">
+                    개장에 관련된 일정을 확인하세요
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="open-notice qna">
+              <a href="#">
+                <img src="./img/icon2.png" alt="icon">
+                <div class="t-wrap">
+                  <h4>자주하는 질문</h4>
+                  <p class="txt">
+                    많은 분들이 궁금해 하시는 질문모음입니다.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="dep1">
+          <div class="rel">
+            <h4>관련사이트</h4>
+            <div class="swiper site">
+    
+              <ul class="swiper-wrapper">
+                
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/site1.jpg" alt="site-img">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/site2.jpg" alt="site-img">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/site3.jpg" alt="site-img">
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <img src="./img/site4.jpg" alt="site-img">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="btn-wrap">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dep2">
+          <div class="rel">
+            <div class="left">
+              <h5>망우역사문화공원</h5>
+              <div class="foot-info">
+                <span>(우)02043 서울특별시 중랑구 망우로91길 2 </span>
+                <span>전화번호 : 02-2094-6800~6803</span>
+              </div>
+              <div class="time">
+                <span>운영시간</span>
+                평일(월 ~ 금) 오전 09:00 ~ 오후 06:00 / 공휴일 제외
+              </div>
+              <div class="copy">
+                Copyright © 망우역사문화공원 All rights reserved.
+              </div>
+            </div>
+            <div class="right">
+              <div class="foot-link">
+                <a href="#">
+                  <img src="./img/foot1.png" alt="ico">
+                  <span>개인정보취급방침</span>
+                </a>
+                <a href="#">
+                  <img src="./img/foot1.png" alt="ico">
+                  <span>이메일주소무단수집거부</span>
+                </a>
+              </div>
+              <div class="banner">
+                <a href="#">
+                  <img src="./img/foot_logo.jpg" alt="logo">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/tab.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow-x:hidden ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: 'Noto Sans KR', 'Open Sans', AppleGothic, helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.75em;
+    letter-spacing: -.04em;
+    color: #505050;
+    word-break: keep-all;
+    -webkit-text-size-adjust: none;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+fieldset {
+    border: none
+}
+
+fieldset legend {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999em;
+}
+
+button {
+    cursor: pointer
+}
+
+header,
+hgroup,
+article,
+nav,
+footer,
+figure,
+figcaption,
+canvas,
+section,
+time {
+    display: block
+}
+
+hr {
+    clear: both;
+    display: none;
+}
+
+img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:active {
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+::-webkit-input-placeholder {
+    color: #878787;
+}
+
+:-moz-placeholder {
+    color: #878787;
+}
+
+::-moz-placeholder {
+    color: #878787;
+}
+
+:-ms-input-placeholder {
+    color: #878787;
+}
+
+:placeholder-shown {
+    color: #878787;
+}
+
+table caption {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    vertical-align: middle !important;
+    margin: -.2em 3px 0 0 !important;
+}
+
+input,
+select {
+    vertical-align: middle;
+    background: #fff;
+}
+
+input,
+textarea,
+button {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: checkbox
+}
+
+input[type='radio'] {
+    -webkit-appearance: radio
+}
+
+/* user class */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th,
+.bold {
+    font-weight: 700;
+}
+
+.semibold {
+    font-weight: 500;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.blind {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.input {
+    height: 44px;
+    padding: 6px 16px;
+    color: #505050;
+    font-size: 15px;
+    line-height: 1.5em;
+    border: 1px solid #ddd;
+}
+
+.input[readonly] {
+    background-color: #eee;
+    color: #878787;
+}
+
