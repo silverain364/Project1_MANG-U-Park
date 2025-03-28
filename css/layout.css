@@ -166,7 +166,7 @@ header.schOpen .search-wrap{
 
 /* hero */
 .hero {
-    padding: 3.7rem;
+    margin-top: 3.7rem;
 }
 
 .hero .swiper.hero-slider{
