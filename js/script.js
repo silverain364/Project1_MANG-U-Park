@@ -80,11 +80,11 @@ $(function(){
     const $siblingSub = $(this).siblings('.sub-list')
 
     if ($parentLi.hasClass('on')) {
-      parentLi.removeClass('on')
+      $parentLi.removeClass('on')
       $siblingSub.slideUp()
 
     } else {
-      parentLi
+      $parentLi
         .addClass('on')
         .siblings()
         .removeClass('on')
