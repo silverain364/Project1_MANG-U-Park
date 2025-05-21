@@ -251,6 +251,7 @@ header.schOpen .search-wrap{
 }
 
 .news-slider-wrap {
+    position: relative;
     height: 5rem;
     margin-left: 2rem;
     width: calc(100% - 13rem);
